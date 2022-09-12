@@ -43,6 +43,7 @@ jobs:
           RELEASE=${{ matrix.release }}
           PROJECT=monasca-agent
           PROJECT_REF=${{ env.PROJECT_REF }}
+          EXTRAS=
           PROFILES=
           DIST_PACKAGES=iproute2 libvirt-clients lshw
           PIP_PACKAGES=libvirt-python python-glanceclient python-neutronclient python-novaclient py3nvml
