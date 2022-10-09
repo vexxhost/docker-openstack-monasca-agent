@@ -43,6 +43,7 @@ jobs:
         build-args: |-
           RELEASE=${{ matrix.release }}
           PROJECT=monasca-agent
+          PROJECT_REPO=https://github.com/openstack/monasca-agent
           PROJECT_REF=${{ env.PROJECT_REF }}
           EXTRAS=
           PROFILES=
