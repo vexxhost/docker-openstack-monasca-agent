@@ -48,7 +48,7 @@ jobs:
           EXTRAS=
           PROFILES=
           DIST_PACKAGES=iproute2 libvirt-clients lshw
-          PIP_PACKAGES=libvirt-python python-glanceclient python-neutronclient python-novaclient py3nvml
+          PIP_PACKAGES=cryptography libvirt-python python-glanceclient python-neutronclient python-novaclient py3nvml
         cache-from: type=gha,scope=${{ matrix.release }}
         cache-to: type=gha,mode=max,scope=${{ matrix.release }}
         context: .
